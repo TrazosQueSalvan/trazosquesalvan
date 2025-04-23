@@ -17,10 +17,11 @@
       color: #5e3d2e;
     }
     header {
+      width: 100%;
+      padding: 1.5rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1.5rem 2rem;
     }
     .brand {
       font-size: 1.3rem;
@@ -29,12 +30,16 @@
       color: #DEA193;
       font-weight: 400;
     }
+    nav {
+      display: flex;
+      gap: 2rem;
+    }
     nav a {
-      margin-left: 2rem;
       text-decoration: none;
-      color: #5e3d2e;
-      font-weight: 500;
       font-size: 1rem;
+      font-weight: 500;
+      color: #5e3d2e;
+      white-space: nowrap;
     }
     main {
       max-width: 900px;
@@ -63,6 +68,7 @@
     }
     input, textarea {
       font-family: 'Playfair Display', serif;
+      width: 100%;
       padding: 0.6rem;
       font-size: 1rem;
       border: 1px solid #cbb9ac;
