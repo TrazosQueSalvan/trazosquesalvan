@@ -2,69 +2,75 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Trazos que Salvan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            background-color: #fff8f2;
-            color: #3b2d2a;
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #f5d0c5;
-            padding: 2rem;
-            text-align: center;
-        }
-        main {
-            padding: 2rem;
-            max-width: 800px;
-            margin: auto;
-        }
-        footer {
-            background-color: #f5d0c5;
-            padding: 1rem;
-            text-align: center;
-        }
-        .btn {
-            background-color: #b85c38;
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            text-decoration: none;
-            font-size: 1rem;
-            margin-top: 1rem;
-            display: inline-block;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trazos que Salvan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #faf6f2;
+      color: #6c3d2f;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+    header nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #6c3d2f;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #faf6f2;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      max-width: 600px;
+      margin: 2rem 0;
+      line-height: 1.2;
+    }
+    .hero img {
+      max-height: 500px;
+      width: auto;
+    }
+    .button {
+      background-color: #a86c55;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Trazos que Salvan</h1>
-        <p>Arte con propósito. Compasión en cada trazo.</p>
-    </header>
-    <main>
-        <section>
-            <p>Esta es una iniciativa que busca unir la sensibilidad artística con la compasión por la vida no humana.</p>
-            <p>Recopilamos obras donadas de artistas para subastarlas públicamente, destinando los fondos a cubrir necesidades veterinarias, alimentación y procesos de adopción.</p>
-            <p><strong>¿Qué puedes donar?</strong> Una obra original, una ilustración impresa (numerada y firmada), una fotografía, cerámica, técnica mixta o arte digital impreso.</p>
-            <p><strong>Temática:</strong> Amor por los animales, historias de rescate, libertad, dignidad, afecto y conexión.</p>
-            <p>Todas las obras serán exhibidas con nombre del artista, redes sociales y QR de contacto.</p>
-            <p>💌 Para participar, escribe con el asunto <em>“Trazos que Salvan – Participación”</em> o utiliza el siguiente formulario:</p>
-            <form action="https://formsubmit.co/a.patricia.cardona.c@gmail.com" method="POST">
-                <input type="hidden" name="_autoresponse" value="Gracias por tu generosidad y por hacer parte de Trazos que Salvan. Nos pondremos en contacto contigo pronto para continuar con el proceso.">
-                <input type="hidden" name="_template" value="box">
-                <label>Nombre:<br><input type="text" name="name" required></label><br><br>
-                <label>Correo:<br><input type="email" name="email" required></label><br><br>
-                <label>Mensaje:<br><textarea name="message" rows="5" required></textarea></label><br><br>
-                <button type="submit" class="btn">Enviar participación</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Trazos que Salvan</p>
-    </footer>
+  <header>
+    <div style="font-weight: bold; font-size: 1.5rem;">TRAZOS QUE SALVAN</div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">La Iniciativa</a>
+      <a href="#">Participa</a>
+      <a href="#">Galería</a>
+      <a href="#">Subasta</a>
+    </nav>
+  </header>
+  <main class="hero">
+    <img src="pincelada.png" alt="Pincelada artística" />
+    <h1>El arte que cuida la vida</h1>
+    <a href="#" class="button">Explora la galería</a>
+  </main>
 </body>
 </html>
