@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trazos que Salvan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #fdf9f6;
+      color: #5e3d2e;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #5e3d2e;
+      font-weight: 500;
+    }
+    .hero {
+      position: relative;
+      background: url('pincelada.png') no-repeat right center;
+      background-size: cover;
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #5e3d2e;
+      max-width: 800px;
+      margin-bottom: 2rem;
+    }
+    .hero .btn {
+      background-color: #a05a3c;
+      color: white;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .hero {
+        background-position: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="font-weight: bold; font-size: 1.5rem;">TRAZOS QUE SALVAN</div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">La Iniciativa</a>
+      <a href="#">Participa</a>
+      <a href="#">Galería</a>
+      <a href="#">Subasta</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>El arte que cuida la vida</h1>
+    <a href="#" class="btn">Explora la galería</a>
+  </section>
+</body>
+</html>
