@@ -2,92 +2,59 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Participa - Trazos que Salvan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      background-color: #fdf9f6;
       font-family: 'Playfair Display', serif;
+      background-color: #fdf9f6;
       color: #5e3d2e;
     }
     header {
-      width: 100%;
-      padding: 1.5rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 1.5rem 2rem;
     }
     .brand {
       font-size: 1.3rem;
       letter-spacing: 0.25em;
       text-transform: uppercase;
       color: #DEA193;
-      font-weight: 400;
-    }
-    nav {
-      display: flex;
-      gap: 2rem;
     }
     nav a {
+      margin-left: 2rem;
       text-decoration: none;
+      color: #5e3d2e;
       font-size: 1rem;
       font-weight: 500;
-      color: #5e3d2e;
-      white-space: nowrap;
     }
     main {
       max-width: 900px;
       margin: 3rem auto;
       padding: 0 2rem;
-      line-height: 1.8;
-      min-height: 70vh;
-    }
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-      color: #5e3d2e;
     }
     p {
       font-size: 1.15rem;
       margin-bottom: 1.5rem;
       line-height: 1.8;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
-      margin-top: 2rem;
-    }
-    label {
-      font-weight: bold;
-    }
-    input, textarea {
-      font-family: 'Playfair Display', serif;
-      width: 100%;
-      padding: 0.6rem;
-      font-size: 1rem;
-      border: 1px solid #cbb9ac;
-      border-radius: 6px;
-      background-color: #fffdfb;
-    }
-    textarea {
-      resize: vertical;
-    }
-    button {
+    .boton {
+      display: inline-block;
       background-color: #a05a3c;
       color: white;
-      border: none;
-      padding: 1rem 2rem;
+      padding: 0.8rem 1.5rem;
       font-size: 1rem;
+      text-decoration: none;
       border-radius: 8px;
-      cursor: pointer;
-      align-self: flex-start;
+      transition: background-color 0.3s ease;
+    }
+    .boton:hover {
+      background-color: #884b33;
     }
   </style>
 </head>
@@ -98,46 +65,17 @@
       <a href="index.html">Inicio</a>
       <a href="iniciativa.html">La Iniciativa</a>
       <a href="participa.html">Participa</a>
-      <a href="#">Galería</a>
-      <a href="#">Subasta</a>
+      <a href="galeria.html">Galería</a>
+      <a href="subasta.html">Subasta</a>
     </nav>
   </header>
 
   <main>
-    <h1>Participa</h1>
-    <p>¿Eres artista y deseas unirte a esta causa compasiva? Completa el formulario con los datos de tu obra y súmate a la subasta solidaria de <strong>Trazos que Salvan</strong>.</p>
+    <p>¿Eres artista, ilustrador(a), fotógrafo(a) o creador(a) visual y deseas unirte a una causa compasiva? Esta es tu oportunidad para donar una obra con sentido y formar parte de <strong>Trazos que Salvan</strong>, una subasta solidaria en favor de los animales. Convocamos a quienes desean expresar, a través del arte, su compromiso con la vida, la libertad, el respeto y la dignidad de los seres sintientes. Las obras seleccionadas serán expuestas públicamente y subastadas; los recursos recaudados se destinarán a alimentación, tratamientos veterinarios, esterilización y procesos de adopción.</p>
+
     <p><strong>Fecha límite de inscripción:</strong> 15 de mayo de 2025</p>
 
-    <form>
-      <label for="nombre">Nombre completo del artista</label>
-      <input type="text" id="nombre" name="nombre" required>
-
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="titulo">Título de la obra</label>
-      <input type="text" id="titulo" name="titulo" required>
-
-      <label for="tecnica">Técnica utilizada</label>
-      <input type="text" id="tecnica" name="tecnica" required>
-
-      <label for="anio">Año de creación</label>
-      <input type="text" id="anio" name="anio" required>
-
-      <label for="medidas">Medidas de la obra</label>
-      <input type="text" id="medidas" name="medidas" required>
-
-      <label for="precio">Precio base sugerido para la subasta</label>
-      <input type="text" id="precio" name="precio" required>
-
-      <label for="historia">Historia o mensaje detrás de la obra (máx. 100 palabras)</label>
-      <textarea id="historia" name="historia" rows="4" maxlength="600" required></textarea>
-
-      <label for="imagen">Enlace para subir la imagen de la obra</label>
-      <input type="url" id="imagen" name="imagen" required>
-
-      <button type="submit">Enviar propuesta</button>
-    </form>
+    <a href="https://forms.gle/NFbf5WCnMaeP4NNa6" class="boton" target="_blank">Enviar mi propuesta</a>
   </main>
 </body>
 </html>
