@@ -4,10 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Subasta - Trazos que Salvan</title>
+  <title>¿A dónde va tu trazo? - Trazos que Salvan</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Playfair Display', serif;
@@ -31,7 +30,6 @@
       text-decoration: none;
       color: #5e3d2e;
       font-size: 1rem;
-      font-weight: 500;
     }
     main {
       max-width: 900px;
@@ -40,25 +38,37 @@
     }
     h2 {
       font-size: 1.8rem;
-      margin-bottom: 1rem;
+      color: #a05a3c;
+      margin-top: 3rem;
     }
     p {
       font-size: 1.15rem;
-      margin-bottom: 1.5rem;
       line-height: 1.8;
+      margin-bottom: 1.5rem;
     }
-    .boton {
-      display: inline-block;
-      background-color: #a05a3c;
-      color: white;
-      padding: 0.8rem 1.5rem;
-      font-size: 1rem;
-      text-decoration: none;
+    ul {
+      margin-top: 0.5rem;
+      margin-bottom: 2rem;
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    .timeline {
+      background-color: #f6eee9;
+      padding: 1rem 1.5rem;
+      border-left: 5px solid #dea193;
+      margin: 1rem 0 2rem;
+    }
+    .timeline p {
+      margin: 0.2rem 0;
+    }
+    .destino, .reglas {
+      background-color: #fffdfc;
+      border: 1px solid #ecdcd5;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
       border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
-    .boton:hover {
-      background-color: #884b33;
     }
   </style>
 </head>
@@ -70,19 +80,49 @@
       <a href="iniciativa.html">La Iniciativa</a>
       <a href="participa.html">Participa</a>
       <a href="galeria.html">Galería</a>
-      <a href="subasta.html">Subasta</a>
+      <a href="subasta.html">¿A dónde va tu trazo?</a>
+      <a href="testimonios.html">Vidas que florecen</a>
+      <a href="terminos.html">Términos y condiciones</a>
     </nav>
   </header>
 
   <main>
-    <p>Bienvenido a nuestra subasta solidaria, donde cada obra es una oportunidad para transformar la vida de los animales en condición de abandono. Este evento es una expresión de arte y compasión.</p>
+    <h2>¿A dónde va tu trazo?</h2>
+    <p>Esta sección no te dice cómo ofertar —eso lo encuentras en la galería— sino <strong>por qué tu oferta importa</strong>. Porque cada gesto de generosidad aquí se transforma en una vida cuidada, en un cuerpo curado, en un animal protegido.</p>
 
-    <p>Las obras donadas estarán disponibles para pujar en nuestra plataforma en línea. Lo recaudado será destinado a cubrir tratamientos veterinarios, alimentación, esterilización y procesos de adopción.</p>
+    <div class="timeline">
+      <h3>Línea de tiempo del proceso</h3>
+      <p>🎨 Creación de obras por artistas solidarios</p>
+      <p>📣 Convocatoria abierta y selección</p>
+      <p>🖼️ Exhibición en la galería virtual</p>
+      <p>📈 Subasta silenciosa (hasta el 17 de junio de 2025)</p>
+      <p>📦 Entrega y transformación de recursos en ayuda concreta</p>
+    </div>
 
-    <p><strong>Fecha del evento:</strong> 17 de junio de 2025</p>
-    <p><strong>Modalidad:</strong> Subasta virtual y física (lugar por definir)</p>
+    <div class="destino">
+      <h3>¿A dónde van los recursos?</h3>
+      <ul>
+        <li>🍽️ Alimentación para animales rescatados</li>
+        <li>💉 Esterilización y tratamientos veterinarios</li>
+        <li>💊 Medicamentos y cuidados médicos</li>
+        <li>🚗 Traslados a hogares de paso y adopción</li>
+        <li>🏡 Sostenimiento de hogares temporales</li>
+      </ul>
+    </div>
 
-    <a href="https://example.com/subasta" class="boton" target="_blank">Ir a la subasta</a>
+    <div class="reglas">
+      <h3>Reglamento de participación</h3>
+      <ul>
+        <li>Cada obra tiene un <strong>valor base sugerido</strong> por el artista</li>
+        <li>Puedes hacer una oferta directamente desde la galería, en el formulario individual de cada obra</li>
+        <li>La oferta más alta al 17 de junio será seleccionada</li>
+        <li>El equipo organizador se comunicará con el ofertante para concretar el pago y entrega</li>
+        <li>Los resultados se publicarán el 18 de junio</li>
+        <li>La entrega de obras iniciará a partir del 20 de junio de 2025</li>
+      </ul>
+    </div>
+
+    <p>Gracias por creer en el arte como lenguaje de transformación. Gracias por convertir tu trazo en esperanza.</p>
   </main>
 </body>
 </html>
